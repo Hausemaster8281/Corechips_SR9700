@@ -17,7 +17,7 @@ Before anything, massive credits to everyone who clarified the software side of 
 5. Upon investigating the 2 ICs further, it was seen that the 8-terminal IC is a "4M-bit Serial Peripheral Interface NOR Flash"
 6. This led me to believe that the CoreChips IC was setup to initially mount this as a loop device
 7. When trigerreed by the driver, the chip would stop the SPI interface and switch to Ethernet Interface
-8. This led to a test where the SPI communications were interrupted by shorting the **CS** and **SO** pin on the SPI Flash - 
+8. This led to a test where the SPI communications were interrupted by shorting the **CS** and **SO** pin on the SPI Flash - ![SR9700b](https://github.com/user-attachments/assets/d5f0dceb-a02f-4767-b0b9-19dc069135ad)
 9. Connecting the device with the legs shorted led to the Corechips IC jumping directly to the ethernet adapter mode <img width="612" height="52" alt="Was_Supposed_To_Do_PLA" src="https://github.com/user-attachments/assets/f51b0d05-d58d-4316-adb2-39e8eac62d77" />
 10. This led to curiosity on how the IC would handle the absence of the IC
 11. I brute-forced the IC joints, and connected the adapter
